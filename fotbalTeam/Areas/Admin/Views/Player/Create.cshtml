@@ -1,0 +1,40 @@
+﻿@model Player
+@{
+    ViewData["Title"] = "Player - Create";
+    var positions = new List<SelectListItem>
+    {
+        new SelectListItem { Text = "Midfielder", Value = "Midfielder" },
+        new SelectListItem { Text = "Goalkeeper", Value = "Goalkeeper" },
+        new SelectListItem { Text = "Winger", Value = "Winger" },
+        new SelectListItem { Text = "Forward", Value = "Forward" },
+        new SelectListItem { Text = "Defender", Value = "Defender" },
+    };
+}
+
+<h1>Create New Player</h1>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label for="FirstName">First Name</label>
+        <input type="text" class="form-control" id="FirstName" name="FirstName" required />
+    </div>
+    <div class="form-group">
+        <label for="LastName">Last Name</label>
+        <input type="text" class="form-control" id="LastName" name="LastName" required />
+    </div>
+    <div class="form-group">
+        <label for="DateOfBirth">Date of Birth</label>
+        <input type="date" class="form-control" id="DateOfBirth" name="DateOfBirth" required />
+    </div>
+    <div class="form-group">
+        <label for="Position">Position</label>
+        <select class="form-control" id="Position" name="Position" asp-for="Position" asp-items="@(new SelectList(positions, "Value", "Text", Model?.Position))" required>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="JerseyNumber">Jersey Number</label>
+        <input type="number" class="form-control" id="JerseyNumber" name="JerseyNumber" required />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Create</button>
+</form>

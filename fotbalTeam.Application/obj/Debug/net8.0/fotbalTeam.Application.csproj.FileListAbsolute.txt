@@ -1,0 +1,17 @@
+/Users/ondrejkraus/RiderProjects/fotbalTeam/fotbalTeam.Application/bin/Debug/net8.0/fotbalTeam.Application.deps.json
+/Users/ondrejkraus/RiderProjects/fotbalTeam/fotbalTeam.Application/bin/Debug/net8.0/fotbalTeam.Application.dll
+/Users/ondrejkraus/RiderProjects/fotbalTeam/fotbalTeam.Application/bin/Debug/net8.0/fotbalTeam.Application.pdb
+/Users/ondrejkraus/RiderProjects/fotbalTeam/fotbalTeam.Application/bin/Debug/net8.0/fotbalTeam.Domain.dll
+/Users/ondrejkraus/RiderProjects/fotbalTeam/fotbalTeam.Application/bin/Debug/net8.0/fotbalTeam.Infrastructure.dll
+/Users/ondrejkraus/RiderProjects/fotbalTeam/fotbalTeam.Application/bin/Debug/net8.0/fotbalTeam.Domain.pdb
+/Users/ondrejkraus/RiderProjects/fotbalTeam/fotbalTeam.Application/bin/Debug/net8.0/fotbalTeam.Infrastructure.pdb
+/Users/ondrejkraus/RiderProjects/fotbalTeam/fotbalTeam.Application/obj/Debug/net8.0/fotbalTeam.Application.csproj.AssemblyReference.cache
+/Users/ondrejkraus/RiderProjects/fotbalTeam/fotbalTeam.Application/obj/Debug/net8.0/fotbalTeam.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ondrejkraus/RiderProjects/fotbalTeam/fotbalTeam.Application/obj/Debug/net8.0/fotbalTeam.Application.AssemblyInfoInputs.cache
+/Users/ondrejkraus/RiderProjects/fotbalTeam/fotbalTeam.Application/obj/Debug/net8.0/fotbalTeam.Application.AssemblyInfo.cs
+/Users/ondrejkraus/RiderProjects/fotbalTeam/fotbalTeam.Application/obj/Debug/net8.0/fotbalTeam.Application.csproj.CoreCompileInputs.cache
+/Users/ondrejkraus/RiderProjects/fotbalTeam/fotbalTeam.Application/obj/Debug/net8.0/fotbalTe.ECC4B63D.Up2Date
+/Users/ondrejkraus/RiderProjects/fotbalTeam/fotbalTeam.Application/obj/Debug/net8.0/fotbalTeam.Application.dll
+/Users/ondrejkraus/RiderProjects/fotbalTeam/fotbalTeam.Application/obj/Debug/net8.0/refint/fotbalTeam.Application.dll
+/Users/ondrejkraus/RiderProjects/fotbalTeam/fotbalTeam.Application/obj/Debug/net8.0/fotbalTeam.Application.pdb
+/Users/ondrejkraus/RiderProjects/fotbalTeam/fotbalTeam.Application/obj/Debug/net8.0/ref/fotbalTeam.Application.dll

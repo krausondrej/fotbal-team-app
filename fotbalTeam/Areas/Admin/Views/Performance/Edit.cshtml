@@ -1,0 +1,25 @@
+﻿@model fotbalTeam.Domain.Entities.Performance
+
+@{
+    ViewData["Title"] = "Edit Performance";
+}
+
+<h1>Edit Performance</h1>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" name="Id" value="@Model.Id"/>
+
+    <div class="form-group">
+        <label for="PlayerId">Player</label>
+        <input type="text" class="form-control" id="PlayerId" name="PlayerId" value="@Model.PlayerId" required/>
+    </div>
+    <div class="form-group">
+        <label for="MatchId">Match</label>
+        <input type="text" class="form-control" id="MatchId" name="MatchId" value="@Model.MatchId" required/>
+    </div>
+    <div class="form-group">
+        <label for="PerformanceRating">Performance Rating</label>
+        <input type="text" class="form-control" id="PerformanceRating" name="PerformanceRating" value="@Model.Stats" required/>
+    </div>
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+</form>

@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.8">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\fotbalTeam.Application\fotbalTeam.Application.csproj" />
+        <ProjectReference Include="..\fotbalTeam.Domain\fotbalTeam.Domain.csproj" />
+        <ProjectReference Include="..\fotbalTeam.Infrastructure\fotbalTeam.Infrastructure.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Folder Include="Areas\Admin\Views\Match\" />
+        <Folder Include="Areas\Admin\Views\Performance\" />
+        <Folder Include="Areas\Admin\Views\Player\" />
+        <Folder Include="Areas\Admin\Views\Training\" />
+        <Folder Include="Areas\Player\Views\PlayerSchedule\" />
+    </ItemGroup>
+
+    
+
+
+</Project>

@@ -1,0 +1,43 @@
+﻿@model IList<Player>
+
+@{
+    ViewData["Title"] = "Player Administration";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Date of Birth</th>
+        <th>Position</th>
+        <th>Jersey Number</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var player in Model)
+    {
+    <tr>
+        <td>@player.FirstName</td>
+        <td>@player.LastName</td>
+        <td>@player.DateOfBirth.ToString("yyyy-MM-dd")</td>
+        <td>@player.Position</td>
+        <td>@player.JerseyNumber</td>
+        <td>
+            <a href="@Url.Action("Edit", new { id = player.Id })" class="btn btn-warning btn-sm">Edit</a>
+            <a href="@Url.Action("Delete", new { id = player.Id })" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this player?');">Delete</a>
+        </td>
+    </tr>
+    }
+    </tbody>
+</table>
+
+<a asp-action="Create" class="btn btn-primary btn-lg">Add Player</a>
+
+@section Scripts
+{
+<script src="~/js/dialogs.js"></script>
+}

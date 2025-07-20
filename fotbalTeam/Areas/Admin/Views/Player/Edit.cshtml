@@ -1,0 +1,43 @@
+﻿@model fotbalTeam.Domain.Entities.Player
+
+@{
+ViewData["Title"] = "Edit Player";
+var positions = new List<SelectListItem>
+{
+new SelectListItem { Text = "Midfielder", Value = "Midfielder" },
+new SelectListItem { Text = "Goalkeeper", Value = "Goalkeeper" },
+new SelectListItem { Text = "Winger", Value = "Winger" },
+new SelectListItem { Text = "Forward", Value = "Forward" },
+new SelectListItem { Text = "Defender", Value = "Defender" },
+};
+}
+
+<h1>Edit Player</h1>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" name="Id" value="@Model.Id"/>
+
+    <div class="form-group">
+        <label for="FirstName">First Name</label>
+        <input type="text" class="form-control" id="FirstName" name="FirstName" value="@Model.FirstName" required/>
+    </div>
+    <div class="form-group">
+        <label for="LastName">Last Name</label>
+        <input type="text" class="form-control" id="LastName" name="LastName" value="@Model.LastName" required/>
+    </div>
+    <div class="form-group">
+        <label for="DateOfBirth">Date of Birth</label>
+        <input type="date" class="form-control" id="DateOfBirth" name="DateOfBirth" value="@Model.DateOfBirth.ToString("yyyy-MM-dd")" required/>
+    </div>
+    <div class="form-group">
+        <label for="Position">Position</label>
+        <select class="form-control" id="Position" name="Position" asp-for="Position" asp-items="@(new SelectList(positions, "Value", "Text", Model.Position))" required>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="JerseyNumber">Jersey Number</label>
+        <input type="number" class="form-control" id="JerseyNumber" name="JerseyNumber" value="@Model.JerseyNumber" required/>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+</form>

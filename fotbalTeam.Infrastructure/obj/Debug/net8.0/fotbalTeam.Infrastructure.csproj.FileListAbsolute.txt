@@ -1,0 +1,17 @@
+/Users/ondrejkraus/RiderProjects/fotbalTeam/fotbalTeam.Infrastructure/bin/Debug/net8.0/fotbalTeam.Infrastructure.deps.json
+/Users/ondrejkraus/RiderProjects/fotbalTeam/fotbalTeam.Infrastructure/bin/Debug/net8.0/fotbalTeam.Infrastructure.runtimeconfig.json
+/Users/ondrejkraus/RiderProjects/fotbalTeam/fotbalTeam.Infrastructure/bin/Debug/net8.0/fotbalTeam.Infrastructure.dll
+/Users/ondrejkraus/RiderProjects/fotbalTeam/fotbalTeam.Infrastructure/bin/Debug/net8.0/fotbalTeam.Infrastructure.pdb
+/Users/ondrejkraus/RiderProjects/fotbalTeam/fotbalTeam.Infrastructure/bin/Debug/net8.0/fotbalTeam.Domain.dll
+/Users/ondrejkraus/RiderProjects/fotbalTeam/fotbalTeam.Infrastructure/bin/Debug/net8.0/fotbalTeam.Domain.pdb
+/Users/ondrejkraus/RiderProjects/fotbalTeam/fotbalTeam.Infrastructure/obj/Debug/net8.0/fotbalTeam.Infrastructure.csproj.AssemblyReference.cache
+/Users/ondrejkraus/RiderProjects/fotbalTeam/fotbalTeam.Infrastructure/obj/Debug/net8.0/fotbalTeam.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ondrejkraus/RiderProjects/fotbalTeam/fotbalTeam.Infrastructure/obj/Debug/net8.0/fotbalTeam.Infrastructure.AssemblyInfoInputs.cache
+/Users/ondrejkraus/RiderProjects/fotbalTeam/fotbalTeam.Infrastructure/obj/Debug/net8.0/fotbalTeam.Infrastructure.AssemblyInfo.cs
+/Users/ondrejkraus/RiderProjects/fotbalTeam/fotbalTeam.Infrastructure/obj/Debug/net8.0/fotbalTeam.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/ondrejkraus/RiderProjects/fotbalTeam/fotbalTeam.Infrastructure/obj/Debug/net8.0/fotbalTe.CE6F1CDB.Up2Date
+/Users/ondrejkraus/RiderProjects/fotbalTeam/fotbalTeam.Infrastructure/obj/Debug/net8.0/fotbalTeam.Infrastructure.dll
+/Users/ondrejkraus/RiderProjects/fotbalTeam/fotbalTeam.Infrastructure/obj/Debug/net8.0/refint/fotbalTeam.Infrastructure.dll
+/Users/ondrejkraus/RiderProjects/fotbalTeam/fotbalTeam.Infrastructure/obj/Debug/net8.0/fotbalTeam.Infrastructure.pdb
+/Users/ondrejkraus/RiderProjects/fotbalTeam/fotbalTeam.Infrastructure/obj/Debug/net8.0/fotbalTeam.Infrastructure.genruntimeconfig.cache
+/Users/ondrejkraus/RiderProjects/fotbalTeam/fotbalTeam.Infrastructure/obj/Debug/net8.0/ref/fotbalTeam.Infrastructure.dll

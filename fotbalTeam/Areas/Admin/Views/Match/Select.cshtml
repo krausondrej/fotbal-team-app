@@ -1,0 +1,56 @@
+﻿@model IList<Match>
+
+@{
+    ViewData["Title"] = "Match Administration";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+@{
+    if (Model != null && Model.Count > 0)
+    {
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">@nameof(Match.Id)</th>
+                <th scope="col">@nameof(Match.Opponent)</th>
+                <th scope="col">@nameof(Match.Date)</th>
+                <th scope="col">@nameof(Match.Location)</th>
+                <th scope="col">Edit</th>
+                <th scope="col">Delete</th>
+            </tr>
+            </thead>
+            <tbody>
+            @for (int i = 0; i < Model.Count; ++i)
+            {
+                Match match = Model[i];
+                <tr>
+                    <th scope="row">@match.Id</th>
+                    <td>@match.Opponent</td>
+                    <td>@match.Date</td>
+                    <td>@match.Location</td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@match.Id" class="btn btn-warning">Edit</a>
+                    </td>
+                    <td>
+                        <a asp-action="Delete" asp-route-id="@match.Id" class="btn btn-danger" onclick="return ConfirmDelete();">Delete</a>
+                    </td>
+
+                </tr>
+            }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>Match table is empty!</p>
+    }
+}
+
+<a asp-action="Create" class="btn btn-primary btn-lg">Add Match</a>
+
+
+@section Scripts
+{
+    <script src="~/js/dialogs.js"></script>
+}

@@ -1,0 +1,46 @@
+﻿@model IList<fotbalTeam.Infrastructure.Identity.User>
+
+@{
+    ViewData["Title"] = "User Administration";
+}
+<h1>@ViewData["Title"]</h1>
+
+@{
+    if (Model != null && Model.Any())
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">UserName</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">Phone Number</th>
+                    <th scope="col">Edit</th>
+                    <th scope="col">Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var user in Model)
+                {
+                    <tr>
+                        <th scope="row">@user.Id</th>
+                        <td>@user.UserName</td>
+                        <td>@user.Email</td>
+                        <td>@user.FirstName</td>
+                        <td>@user.LastName</td>
+                        <td>@user.PhoneNumber</td>
+                        <td><a asp-action="Edit" asp-route-id="@user.Id" class="btn btn-warning">Edit</a></td>
+                        <td><a asp-action="Delete" asp-route-id="@user.Id" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this user?');">Delete</a></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>No users found.</p>
+    }
+}
+

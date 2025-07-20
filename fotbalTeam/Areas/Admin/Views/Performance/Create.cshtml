@@ -1,0 +1,28 @@
+﻿@model Performance
+@{
+    ViewData["Title"] = "Perfomance - Create";
+}
+
+<h1>Create New Performance</h1>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label for="PlayerId">Player</label>
+        <input type="text" class="form-control" id="PlayerId" name="PlayerId" required />
+    </div>
+    <div class="form-group">
+        <label for="MatchId">Match</label>
+        <input type="text" class="form-control" id="MatchId" name="MatchId" required />
+    </div>
+    <div class="form-group">
+        <label for="PerformanceRating">Performance Rating</label>
+        <input type="text" class="form-control" id="PerformanceRating" name="Stats" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Create</button>
+</form>
+
+@section Scripts
+{
+    <partial name="_ValidationScriptsPartial" />
+    <script src="~/js/validations/FirstLetterCapitalizedCZ.js"></script>
+}

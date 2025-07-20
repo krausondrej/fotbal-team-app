@@ -1,0 +1,11 @@
+/Users/ondrejkraus/RiderProjects/fotbalTeam/fotbalTeam.Domain/bin/Debug/net8.0/fotbalTeam.Domain.deps.json
+/Users/ondrejkraus/RiderProjects/fotbalTeam/fotbalTeam.Domain/bin/Debug/net8.0/fotbalTeam.Domain.dll
+/Users/ondrejkraus/RiderProjects/fotbalTeam/fotbalTeam.Domain/bin/Debug/net8.0/fotbalTeam.Domain.pdb
+/Users/ondrejkraus/RiderProjects/fotbalTeam/fotbalTeam.Domain/obj/Debug/net8.0/fotbalTeam.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ondrejkraus/RiderProjects/fotbalTeam/fotbalTeam.Domain/obj/Debug/net8.0/fotbalTeam.Domain.AssemblyInfoInputs.cache
+/Users/ondrejkraus/RiderProjects/fotbalTeam/fotbalTeam.Domain/obj/Debug/net8.0/fotbalTeam.Domain.AssemblyInfo.cs
+/Users/ondrejkraus/RiderProjects/fotbalTeam/fotbalTeam.Domain/obj/Debug/net8.0/fotbalTeam.Domain.csproj.CoreCompileInputs.cache
+/Users/ondrejkraus/RiderProjects/fotbalTeam/fotbalTeam.Domain/obj/Debug/net8.0/fotbalTeam.Domain.dll
+/Users/ondrejkraus/RiderProjects/fotbalTeam/fotbalTeam.Domain/obj/Debug/net8.0/refint/fotbalTeam.Domain.dll
+/Users/ondrejkraus/RiderProjects/fotbalTeam/fotbalTeam.Domain/obj/Debug/net8.0/fotbalTeam.Domain.pdb
+/Users/ondrejkraus/RiderProjects/fotbalTeam/fotbalTeam.Domain/obj/Debug/net8.0/ref/fotbalTeam.Domain.dll

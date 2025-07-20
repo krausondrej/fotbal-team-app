@@ -1,0 +1,49 @@
+﻿@using fotbalTeam.Domain.Entities
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+
+    <link href="~/css/home.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="header text-center">
+        <h1>Football Team</h1>
+        <p>Login or register to see information about your TEAM</p>
+    </div>
+
+    @if (Model != null && Model.Carousels != null && Model.Carousels.Count > 0)
+    {
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                @{
+                    string active = "active";
+                    IList<Carousel> carousels = Model.Carousels;
+                    for (int i = 0; i < carousels.Count; ++i)
+                    {
+                        <div class="carousel-item @active">
+                            <img src="@carousels[i].ImageSrc" class="d-block w-100" alt="@carousels[i].ImageAlt">
+                        </div>
+                        active = String.Empty;
+                    }
+                }
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    }
+    </body>
+</html>

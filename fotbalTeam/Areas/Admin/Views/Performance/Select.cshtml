@@ -1,0 +1,56 @@
+﻿@model IList<Performance>
+
+@{
+    ViewData["Title"] = "Performance Administration";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+@{
+    if (Model != null && Model.Count > 0)
+    {
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">@nameof(Performance.Id)</th>
+                <th scope="col">@nameof(Performance.MatchId)</th>
+                <th scope="col">@nameof(Performance.PlayerId)</th>
+                <th scope="col">@nameof(Performance.Stats)</th>
+                <th scope="col">Edit</th>
+                <th scope="col">Delete</th>
+            </tr>
+            </thead>
+            <tbody>
+            @for (int i = 0; i < Model.Count; ++i)
+            {
+                Performance performance = Model[i];
+                <tr>
+                    <th scope="row">@performance.Id</th>
+                    <td>@performance.MatchId</td>
+                    <td>@performance.PlayerId</td>
+                    <td>@performance.Stats</td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@performance.Id" class="btn btn-warning">Edit</a>
+                    </td>
+                    <td>
+                        <a asp-action="Delete" asp-route-id="@performance.Id" class="btn btn-danger" onclick="return ConfirmDelete();">Delete</a>
+                    </td>
+
+                </tr>
+            }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>Training table is empty!</p>
+    }
+}
+
+<a asp-action="Create" class="btn btn-primary btn-lg">Add Performance</a>
+
+
+@section Scripts
+{
+    <script src="~/js/dialogs.js"></script>
+}

@@ -1,0 +1,113 @@
+@model fotbalTeam.Areas.Player.Controllers.SelectViewModel
+
+@{
+    ViewData["Title"] = "Player Information";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="~/css/schedule.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>@ViewData["Title"]</h2>
+
+    <div class="section">
+        <h3>Matches</h3>
+        <table>
+            <thead>
+            <tr>
+                <th>Opponent</th>
+                <th>Date</th>
+                <th>Location</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var match in Model.Matches)
+            {
+                <tr>
+                    <td>@match.Opponent</td>
+                    <td>@match.Date.ToString("f")</td>
+                    <td>@match.Location</td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <h3>Performances</h3>
+        <table>
+            <thead>
+            <tr>
+                <th>Player</th>
+                <th>Match</th>
+                <th>Stats</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var performance in Model.Performances)
+            {
+                <tr>
+                    <td>@performance.Player.FirstName @performance.Player.LastName</td>
+                    <td>@performance.Match.Opponent</td>
+                    <td>@performance.Stats</td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <h3>Players</h3>
+        <table>
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Jersey Number</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var player in Model.Players)
+            {
+                <tr>
+                    <td>@player.FirstName @player.LastName</td>
+                    <td>@player.Position</td>
+                    <td>@player.JerseyNumber</td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <h3>Trainings</h3>
+        <table>
+            <thead>
+            <tr>
+                <th>Date</th>
+                <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var training in Model.Trainings)
+            {
+                <tr>
+                    <td>@training.Date.ToString("f")</td>
+                    <td>@training.Description</td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>

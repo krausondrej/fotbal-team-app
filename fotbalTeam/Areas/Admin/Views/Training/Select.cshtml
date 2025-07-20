@@ -1,0 +1,37 @@
+﻿@model IList<Training>
+
+@{
+    ViewData["Title"] = "Training Administration";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Date</th>
+        <th>Description</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var training in Model)
+    {
+        <tr>
+            <td>@training.Date.ToString("yyyy-MM-dd")</td>
+            <td>@training.Description</td>
+            <td>
+                <a href="@Url.Action("Edit", "Training", new { id = training.Id })" class="btn btn-warning">Edit</a>
+                <a href="@Url.Action("Delete", "Training", new { id = training.Id })" class="btn btn-danger" onclick="return confirm('Are you sure?');">Delete</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+<a asp-action="Create" class="btn btn-primary btn-lg">Add Training</a>
+
+@section Scripts
+{
+    <script src="~/js/dialogs.js"></script>
+}
